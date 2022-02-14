@@ -15,8 +15,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        view.addGestureRecognizer(tap)
+
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
 
     @IBAction func doConvertBtn(_ sender: UIButton) {
         let inputMiles1 = milesInput.text
