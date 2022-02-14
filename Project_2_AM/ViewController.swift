@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         {
             milesInput.text = ""
             kilosInput.text = ""
+            print("hello")
         }
         var inputKilos = Float(inputKilos1!)
         if (inputKilos1 == "" || inputKilos1 == nil)
